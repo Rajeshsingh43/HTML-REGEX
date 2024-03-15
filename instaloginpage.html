@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    .body {
+        height: 100vh;
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+        height: 150vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inner1 {
+        display: flex;
+        height: 90vh;
+        width: 30%;
+    }
+
+    .inner2 {
+        /* border: 2px solid rgb(206, 40, 40); */
+        height: 110vh;
+        width: 40%;
+    }
+
+    .inner1 .img1 {
+        margin-top: 10px;
+        height: 95vh;
+        width: 110%;
+    }
+
+    .inner1 .img2 {
+        position: absolute;
+        top: 205px;
+        left: 310px;
+        height: 80vh;
+        width: 18%;
+    }
+
+    .box1 .img1 {
+        height: 20vh;
+        width: 45%;
+        margin: 25px 130px;
+    }
+
+    .box1 {
+        /* border: 1px solid black; */
+        height: 65%;
+    }
+
+    .box1 .inp1 {
+        margin-top: 20px;
+        padding: 10px;
+        margin-left: 40px;
+        width: 80%;
+        margin-bottom: 5px;
+    }
+
+    .box1 .inp2 {
+        padding: 10px;
+        margin-top: 6px;
+        margin-left: 40px;
+        width: 80%;
+    }
+
+    .box1 .b {
+        border: none;
+        color: white;
+        background-color: #70a8ef;
+        margin-top: 15px;
+        width: 78%;
+        margin-left: 45px;
+        padding: 10px;
+        border-radius: 8px;
+
+    }
+
+    .A {
+        margin-left: 20px;
+        margin-top: 30px;
+        border: 1px solid gray;
+        height: 78vh;
+        width: 75%;
+    }
+
+    .B {
+        border: 1px solid gray;
+        margin-top: 15px;
+        margin-left: 20px;
+        height: 10vh;
+        width: 75%;
+    }
+
+    .C {
+        border: 1px solid black;
+        margin-top: 20px;
+        height: 10vh;
+        width: 100%;
+    }
+
+    h5 {
+        margin-top: 10px;
+        text-align: center;
+        margin-right: 90px;
+    }
+
+    .img3 {
+        height: 9vh;
+        width: 28%;
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+
+    .img4 {
+        height: 9vh;
+        width: 28%;
+        margin-left: 10px;
+    }
+
+    p {
+        padding: 15px;
+        margin-left: 75px;
+    }
+
+    h3 {
+        font-family: serif;
+        font-size: 16px;
+        color: #385185;
+        line-height: 40px;
+        margin-left: 18px;
+        text-align: center;
+    }
+
+    h4 {
+        font-family: serif;
+        font-size: 14px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .box1 .img5 {
+
+        margin-top: 50px;
+        margin-left: 100px;
+        height: 13vh;
+        width: 50%;
+    }
+    .footer{
+        word-spacing: 10px;
+        /* border: 1px solid black; */
+        position: absolute;
+        bottom: -300px;
+        right: 120px;
+    }
+    span{
+        line-height: 8px;
+        margin-left: 400px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="inner1">
+            <img src="bg.png" alt="" class="img1">
+
+            <img src="instagram.png" alt="" class="img2">
+        </div>
+        <div class="inner2">
+            <div class="A">
+                <div class="box1">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1200px-Instagram_logo.svg.png"
+                        alt="" class="img5">
+                    <form>
+                        <input type="text" class="inp1" placeholder="phone number,username"> <br>
+                        <input type="text" class="inp2" placeholder="password"> <br>
+                        <button class="b">Login</button>
+                    </form>
+                    <p>--------------OR---------------</p>
+
+                    <h3>Log In with Facebook</h3>
+                    <h4>Forgot password ?</h4>
+                </div>
+            </div>
+            <div class="B">
+                <p>Don't have an account? <a href="#">Sign up</a></p>
+            </div>
+            <h5>Get the app</h5>
+            <img src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png" alt="" class="img3">
+            <img src="https://static.cdninstagram.com/rsrc.php/v3/yu/r/EHY6QnZYdNX.png" alt="" class=img4>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <p>Meta About Blog Help  API Privacy Terms Location instagramLite Threads Contact uploading&Non-Users Meta Verified</p> <br>
+                <span>English 2024 instagram from Meta</span>
+
+            </div>
+        </footer>
+
+    </div>
+
+
+</body>
+
+</html>
