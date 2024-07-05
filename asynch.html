@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+ // let a=10;
+    // console.log(a)
+    // let b=20;
+    // console.log(b)
+    // let c=30;
+    // console.log(c)
+
+    // setTimeout(()=>{
+    //     for(let i=0; i<70000; i++){
+    //         console.log("i am running");
+    //     }
+    // },1000)
+
+    // let d=40;
+    // console.log(d)
+    // let e=50;
+    // console.log(e)
+    // let f=60;
+    // console.log(f)
+
+    //output(10,20,sum)
+
+    // function output(a){
+    //     sum()
+    // }
+    // function sum(){
+    //     console.log("i am callback")
+    // }
+//     // output(sum)
+
+
+//    function food(dish,order){
+//     setTimeout(()=>{
+//         console.log(dish)
+//         order()
+//     },3000)
+//    }
+//    food("pizza",()=>{
+
+//     food("burger",()=>{
+
+//         food("patties",()=>{
+//              food("cold drink",()=>{
+
+//              })
+//         })
+
+//     })
+//    })
+
+//  let prom=new Promise((resolve,reject)=>{
+//     if(true){
+//         console.log("promise pura hua")
+//     }
+//     else{
+//         reject("promise adhura rah gyaa")
+//     }
+//  })
+//  prom.then((result)=>{
+//     console.log(result)
+//  }).catch((error)=>{
+//     console.log(error)
+
+//  })
+
+//  function food(dish){
+//     return new promise((resolve,reject=>{
+//         setTimeout(()=>{
+//             resolve(dish);
+//         },3000);
+//     })
+//     )
+// }
+// food("pizza".then((item)=>{
+//     console.log(item)
+
+//     food("burger").then((item)=>{
+//         console.log(item)
+
+//         food("cold drink").then((item)=>{
+//             console.log(item)
+//         })
+
+//     })
+
+
+        function food(dish){
+        
+        return new promise((resolve,reject)=> {
+        setTimeout(()=>{
+                resolve(dish);
+            },3000);
+        });
+    }
+
+    async function output(){
+        let pizza=await food("pizza");
+        console.log(pizza);
+
+        let burger=await food("burger");
+        console.log(burger);
+
+        let patties=await food("patties");
+        console.log(patties)
+    }
+    output()
+
+    </script>
+    
+</body>
+
+    
+</html>

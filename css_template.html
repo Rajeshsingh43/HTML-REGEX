@@ -4,533 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="template.css">
     <title>Document</title>
-    <style>
-        * {
-            padding: 0px;
-            margin: 0px;
-            box-sizing: border-box;
-        }
-
-        .main_container {
-            width: 100%;
-            display: flex;
-
-        }
-
-        .container1 {
-            position: fixed;
-            left: 0px;
-            width: 30%;
-            height: 100vh;
-            background-color: red;
-
-        }
-
-        .container2 {
-            height: 500vh;
-            width: 70%;
-
-        }
-
-        li:hover {
-            width: 60%;
-            background-color: white
-        }
-
-        li {
-            color: black;
-            line-height: 40px;
-            font-size: 30px;
-            list-style: none;
-            position: relative;
-            top: 250px;
-            left: 30px;
-        }
-
-        h1 {
-            font-size: 50px;
-            position: relative;
-            top: 100px;
-        }
-
-        .container2 h1 {
-            font-size: 60px;
-            margin-left: 400px;
-        }
-
-        /* p{
-            font-weight: bold;
-            font-size: 50px;
-            color: red;
-            margin-top: 300px;
-
-        } */
-
-        .A {
-            display: flex;
-            position: absolute;
-            top: 430px;
-            left: 470px;
-            justify-content: space-between;
-
-        }
-
-        .box1 {
-            border: 1px solid black;
-            height: 300px;
-            width: 300px;
-        }
-
-        .box2 {
-            margin-left: 40px;
-            border: 1px solid black;
-            height: 300px;
-            width: 300px;
-        }
-
-        .box1 .img1 {
-
-            height: 300px;
-            width: 300px;
-        }
-
-        .box2 .img2 {
-
-            height: 300px;
-            width: 300px;
-        }
-
-        .B {
-            display: flex;
-            position: absolute;
-            top: 760px;
-            left: 470px;
-            justify-content: space-between;
-        }
-
-        .box3 {
-            border: 1px solid black;
-            height: 200px;
-            width: 300px;
-        }
-
-        .box4 {
-            margin-left: 40px;
-            border: 1px solid black;
-            height: 200px;
-            width: 300px;
-        }
-
-        .box3 .img3 {
-
-            height: 200px;
-            width: 300px;
-        }
-
-        .box4 .img4 {
-            height: 200px;
-            width: 300px;
-        }
-
-        .C {
-            display: flex;
-            position: absolute;
-            top: 990px;
-            left: 470px;
-            justify-content: space-between;
-        }
-
-        .box5 {
-            border: 1px solid black;
-            height: 200px;
-            width: 300px;
-        }
-
-        .box6 {
-            margin-left: 40px;
-            border: 1px solid black;
-            height: 200px;
-            width: 300px;
-        }
-
-        .box5 .img5 {
-
-            height: 200px;
-            width: 300px;
-        }
-
-        .box6 .img6 {
-            height: 200px;
-            width: 300px;
-        }
-
-        .container2 h2 {
-            color: red;
-            font-size: 50px;
-            position: absolute;
-            top: 1250px;
-            left: 430px;
-        }
-
-        .container2 p {
-            position: absolute;
-            top: 1350px;
-            left: 400px;
-            font-size: 20px;
-        }
-
-        .a {
-            display: inline-block;
-        }
-
-        .a h3 {
-            color: red;
-            font-size: 50px;
-            position: absolute;
-            top: 1650px;
-            left: 430px;
-        }
-
-        .a p {
-            margin-top: 400px;
-            left: 400px;
-            font-size: 20px;
-        }
-
-        .a h4 {
-            /* border: 1px solid black;
-            height: 10vh; */
-            width: 100%;
-            margin-top: 1840px;
-            margin-left: 400px;
-            font-size: 25px;
-        }
-
-
-        .b {
-            display: flex;
-            position: absolute;
-            top: 2100px;
-            left: 400px;
-
-        }
-
-        .b .box1 {
-            margin-left: 20px;
-            border: 1px solid black;
-            height: 320px;
-            width: 250px;
-        }
-
-        .b .box2 {
-            margin-left: 20px;
-            border: 1px solid black;
-            height: 320px;
-            width: 250px;
-        }
-
-        .b .box3 {
-            margin-left: 25px;
-            border: 1px solid black;
-            height: 320px;
-            width: 250px;
-        }
-
-        .b .box1 .img1 {
-            height: 25vh;
-            width: 250px;
-        }
-
-        .b .box2 .img2 {
-            height: 25vh;
-            width: 250px;
-        }
-
-        .b .box3 .img3 {
-            height: 25vh;
-            width: 250px;
-        }
-
-        .text1 {
-            height: 30vh;
-            background-color: grey;
-        }
-
-        h6 {
-            color: red;
-            font-size: 50px;
-            position: absolute;
-            top: 2500px;
-            left: 430px;
-        }
-
-        .c p {
-            margin-top: 2600px;
-            margin-left: -200px;
-            font-size: 22px;
-        }
-
-        .d {
-            display: flex;
-            position: absolute;
-            top: 2700px;
-            left: 435px;
-        }
-
-        .d .box1 {
-            height: 100vh;
-            width: 330px;
-        }
-
-        .d .box2 {
-            margin-left: 20px;
-            height: 100vh;
-            width: 330px;
-        }
-
-        .box1 .Ram1 {
-            padding-top: 22px;
-            color: white;
-            font-size: 35px;
-            text-align: center;
-            background-color: #616161;
-            border: 1px solid black;
-            height: 15vh;
-            width: 100%;
-        }
-
-        .box1 .Ram2 {
-            padding-top: 22px;
-            text-align:center;
-            background-color: #ddd;
-            border: 1px solid black;
-            height: 10vh;
-            width: 100%;
-        }
-
-        .box1 .Ram3 {
-            padding-top: 22px;
-            text-align:center;
-            background-color: #ddd;
-            border: 1px solid black;
-            height: 10vh;
-            width: 100%;
-        }
-
-        .box1 .Ram4 {
-            padding-top: 22px;
-            text-align:center;
-            background-color: #ddd;
-            border: 1px solid black;
-            height: 10vh;
-            width: 100%;
-        }
-
-        .box1 .Ram5 {
-            padding-top: 22px;
-            text-align:center;
-            background-color: #ddd;
-            border: 1px solid black;
-            height: 10vh;
-            width: 100%;
-        }
-
-        .box1 .Ram6 {
-            padding-top: 22px;
-            text-align:center;
-            background-color: #ddd;
-            border: 1px solid black;
-            height: 10vh;
-            width: 100%;
-        }
-
-        .box1 .Ram7 {
-            padding-top: 22px;
-            text-align:center;
-            background-color: #ddd;
-            border: 1px solid black;
-            height: 20vh;
-            width: 100%;
-        }
-
-        .box1 .Ram8 {
-            padding-top: 22px;
-            text-align:center;
-            text-align:center;
-            background-color: #ddd;
-            border: 1px solid black;
-            height: 15vh;
-            width: 100%;
-        }
-       .Ram8 button{
-        font-size: 20px;
-        color: black;
-        background-color: white;
-        padding: 12px 20px;
-       }
-       .r8 button{
-        font-size: 20px;
-        color: white;
-        background-color: red;
-        padding: 10px 20px;
-       }
-
-        .d .box2 {
-            
-            height: 100vh;
-            width: 330px;
-        }
-
-        .d .box2 {
-            margin-left: 20px;
-            height: 100vh;
-            width: 330px;
-        }
-
-
-        .box2 .r1 {
-            padding-top: 22px;
-            color: white;
-            font-size: 35px;
-            text-align: center;
-            background-color: red;
-            border: 1px solid black;
-            height: 15vh;
-            width: 100%;
-        }
-
-        .box2 .r2 {
-            padding-top: 22px;
-            text-align:center;
-            background-color: #ddd;
-            border: 1px solid black;
-            height: 10vh;
-            width: 100%;
-        }
-
-        .box2 .r3 {
-            padding-top: 22px;
-            text-align:center;
-            background-color: #ddd;
-            border: 1px solid black;
-            height: 10vh;
-            width: 100%;
-        }
-
-        .box2 .r4 {
-            padding-top: 22px;
-            text-align:center;
-            background-color: #ddd;
-            border: 1px solid black;
-            height: 10vh;
-            width: 100%;
-        }
-
-        .box2 .r5 {
-            padding-top: 22px;
-            text-align:center;
-            background-color: #ddd;
-            border: 1px solid black;
-            height: 10vh;
-            width: 100%;
-        }
-
-        .box2 .r6 {
-            padding-top: 22px;
-            text-align:center;
-            background-color: #ddd;
-            border: 1px solid black;
-            height: 10vh;
-            width: 100%;
-        }
-
-        .box2 .r7 {
-            padding-top: 22px;
-            text-align:center;
-            background-color: #ddd;
-            border: 1px solid black;
-            height: 20vh;
-            width: 100%;
-        }
-
-        .box2 .r8 {
-            padding-top: 22px;
-            text-align:center;
-            background-color: #ddd;
-            border: 1px solid black;
-            height: 15vh;
-            width: 100%;
-        }
-
-        .j {
-            position: absolute;
-            top: 3500px;
-            left: 300px;
-        }
-
-        .inp1 {
-            padding: 13px;
-            margin-bottom: 40px;
-            margin-left: 80px;
-            width: 130%;
-        }
-
-        .inp2 {
-            padding: 13px;
-            margin-bottom: 40px;
-            margin-left: 80px;
-            width: 130%;
-        }
-
-        .inp3 {
-            padding: 13px;
-            margin-bottom: 40px;
-            margin-left: 80px;
-            width: 130%;
-        }
-        .j span{
-            color: red;
-            font-weight: bold;
-            /* margin-top: 0px; */
-            position: absolute;
-            bottom: 520px;
-            left: 130px;
-            font-size: 50px;
-        }
-        .j p{
-            
-            width: 130%;
-            position: absolute;
-            bottom: 450px;
-            left: 80px;
-            font-size: 20px;
-        }
-        label{
-            margin-left: 90px;
-            font-size: 20px;
-        }
-        .j button{
-            color: white;
-            background-color: red;
-            padding: 13px;
-            margin-bottom: 40px;
-            margin-left: 80px;
-            width: 130%;
-        }
-    </style>
 </head>
 
 <body>
     <div class="main_container">
         <div class="container1">
-            <h1>Company name</h1>
+            <h1>Company <br>name</h1>
             <ul>
-                <li>HOME</li>
+                <li>Home</li>
                 <li>Showcase</li>
-                <li>SERVICES</li>
-                <li>DESIGNERS</li>
-                <li>PACKEGES</li>
+                <li>Services</li>
+                <li>Designers</li>
+                <li>packages</li>
                 <li>Contact</li>
             </ul>
 
@@ -581,8 +68,7 @@
             <div class="a">
                 <h3>Designers.</h3>
                 <p>The best team in the world. <br>
-                    <br
-                    >
+                    <br>
                     We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
                     ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
@@ -591,25 +77,51 @@
                     labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
                 <div>
-                <h4>Our Designed are thoughtfully choosen:</h4>
+                    <h4>Our Designed are thoughtfully choosen:</h4>
                 </div>
             </div>
             <div class="b">
                 <div class="box1">
+
+                    
                     <div>
                         <img src="https://www.w3schools.com/w3images/team2.jpg" alt="" class="img1">
+                        <div class="one">
+                            <span>john doe</span> <br>
+                            <h4>CEO&Founder</h4>
+                            <br>
+                            <br>
+                            <h5>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</h5>
+
+                        </div>
                     </div>
-                    <div class="text1">
-                        <h5>John Doe</h5>
-                        <h5>CEO&Founder</h5>
-                    </div>
+                          
+                  
                 </div>
                 <div class="box2">
                     <img src="https://www.w3schools.com/w3images/team1.jpg" alt="" class="img2">
+                    <div class="two">
+                        <span>Jane Doe
+                        </span> <br>
+                            <h4>Designer</h4>
+                            <br>
+                            <br>
+                            <h5>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</h5>
+
+                    </div>
                 </div>
                 <div class="box3">
                     <img src="https://www.w3schools.com/w3images/team3.jpg" alt="" class="img3">
+                    <div class="three">
+                        <span>Mike Ross</span> <br>
+                            <h4>Architect</h4>
+                            <br>
+                            <br>
+                            <h5>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</h5>
+
+                    </div>
                 </div>
+                
             </div>
 
         </div>
@@ -650,12 +162,14 @@
 
 
         </div>
-         
+
         <div class="j">
             <span>Contact.</span>
-            <div><p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+            <div>
+                <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love
+                    meeting new people!</p>
             </div>
-           
+
             <form action="">
                 <label>Name</label>
                 <input type="Name" class="inp1"><br>

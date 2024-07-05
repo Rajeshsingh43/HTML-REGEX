@@ -1,0 +1,77 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>console.log("hello java sript")
+    var a=10;// can be redeclare and can be reaasign
+     var a=20;
+     a=20;
+    console.log(a)
+
+    let b=20; //can't be redeclare can be reassign 
+    b=20;
+    console.log(a)
+
+    const c=30; //can not be redeclared and can not be reassign
+    // c=50;
+    console.log(c)
+
+    let x;  // undefined
+
+    let y=BigInt(123);  //bigInt
+
+    let z=Symbol("hello")
+
+    const student={
+        isFullname:"rahul kumar",
+        age:22,
+        cgpa:8.9,
+        ispass:true
+    };
+
+    for(let count=1; count<1000000;count++){
+        console.log("apna college")
+    }
+    console.log("loop has ended")
+    </script>
+    
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n=prompt("enter a number:");
+
+let arr=[];
+
+for(let i=1;i<=n;i++){
+    arr[i-1]=i;
+}
+console.log(arr);
+
+let sum=arr.reduce((res,curr)=>{
+    return res+curr;
+});
+
+console.log("sum",sum);
+
+let factorial=arr.reduce((res,curr)=>{
+    return res*curr;
+})
+console.log("factorial=",factorial);
+    </script>
+    
+</body>
+</html>

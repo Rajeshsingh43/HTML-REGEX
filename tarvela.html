@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    .header {
+        background-color: #13357b;
+        justify-content: end;
+        list-style: none;
+        display: flex;
+        /* border: 1px solid black; */
+        justify-content: space-between;
+    }
+
+    .one {
+        color: white;
+        margin-left: 20px;
+        padding: 20px;
+        display: flex;
+
+    }
+
+    .image {
+        background-image: url(https://themewagon.github.io/travela/img/carousel-2.jpg);
+        height: 100vh;
+        list-style: none;
+        display: flex;
+
+    }
+
+    .two {
+        display: flex;
+        margin-top: 25px;
+        margin-left: 150px;
+    }
+
+    .two li {
+        font-size: 18px;
+        font-family: sans-serif;
+        margin-left: 30px;
+    }
+
+    .image p {
+        margin: 20px 90px;
+        font-family: sans-serif;
+        font-size: 40px;
+    }
+
+    .text {
+        display: flex;
+    }
+
+    .text span {
+        position: absolute;
+        top: 170px;
+        left: 490px;
+        font-size: 35px;
+        font-family: sans-serif;
+    }
+
+    .text h1 {
+        color: ;
+        position: absolute;
+        top: 250px;
+        left: 380px;
+        font-size: 40px;
+        font-family: sans-serif;
+    }
+
+    .text p {
+        margin-top: 10px;
+        margin-left: 180px;
+    }
+
+    .text h2 {
+        position: absolute;
+        top: 400px;
+        left: 180px;
+        font-size: 20px;
+        font-family: sans-serif;
+    }
+
+    button {
+        color: white;
+        background-color: #13357b;
+        position: absolute;
+        top: 500px;
+        left: 530px;
+        border: 1px solid black;
+        font-size: 17px;
+        padding: 22px 45px;
+        border-radius: 30px;
+        font-weight: bold;
+    }
+
+    .C .inp1 {
+        height: 12vh;
+        width: 88%;
+        border: none;
+        position: absolute;
+        top: 620px;
+        left: 85px;
+        border-radius: 40px;
+    }
+
+    .B button {
+        margin-top: 15px;
+        position: absolute;
+        top: 615px;
+        left: 1020px;
+        font-size: 20px;
+        padding: 12px 24px;
+
+    }
+
+    .A .inp2 {
+        height: 28vh;
+        width: 95%;
+        border: none;
+        background-color: rgb(19 53 100 / 80%);
+        position: absolute;
+        top: 570px;
+        left: 30px;
+        border-radius: 70px;
+    }
+
+    .box {
+        height: 400px;
+        width: 350px;
+        border: px solid black;
+        position: absolute;
+        top: 850px;
+        left: 90px;
+    }
+
+    .box img {
+        height: 400px;
+        width: 350px;
+    }
+
+    .D h5 {
+        color: #13357b;
+        font-size: 25px;
+        margin: 220px 500px;
+    }
+
+    .D h1 {
+        font-size: 37px;
+        margin: -190px 500px;
+    }
+
+    .D h2 {
+        color: #13357b;
+        font-size: 37px;
+        margin: 148px 700px;
+
+    }
+
+    .D p {
+        height: 10vh;
+        width: 50vw;
+        font-size: 18px;
+        font-family: sans-serif;
+        /* border: 1px solid black; */
+        margin: -100px 500px;
+    }
+
+    .D span {
+
+        height: 10vh;
+        width: 50vw;
+        font-size: 17px;
+        font-family: sans-serif;
+        /* border: 1px solid black; */
+        position: absolute;
+        top: 68rem;
+        left: 31rem;
+
+    }
+
+    /* table{
+        margin-top: 300px;
+        margin-left: 500px;
+    }
+    tr{
+        line-height: 35px;
+        margin: 200px 300px;
+        font-size: 20px;
+    }
+    th{
+        margin:10px 400px;
+    } */
+
+    .tab {
+        /* color: lightslategray; */
+        margin-top: 220px;
+        margin-left: 500px;
+        line-height: 35px;
+        font-size: 16px;
+    }
+
+    .tab1 {
+        /* color: lightslategray; */
+        margin-top: -112px;
+        margin-left: 850px;
+        line-height: 35px;
+        font-size: 16px;
+
+    }
+
+    .Aa button {
+        margin-top: 50rem;
+        margin-left: -2rem;
+        padding: 15px 35px;
+        border-radius: 100px;
+    }
+
+    .container {
+        /* border: 1px solid black; */
+    }
+
+    .container h4 {
+        margin: 12rem 33rem;
+        font-size: 30px;
+    }
+
+    .container h3 {
+        margin: -11.4rem 29rem;
+        font-size: 45px;
+    }
+
+    .container h5 {
+        margin: 8rem 35.5rem;
+        font-size: 45px;
+    }
+
+    .a {
+        display: flex;
+    }
+
+    .box1 {
+        margin-left: 60px;
+        /* height: 30vh; */
+        width: 45%;
+        border: 1px solid black;
+    }
+
+    .box2 {
+        margin-left: 50px;
+        /* height: 30vh; */
+        width: 45%;
+        border: 1px solid black;
+    }
+
+    .b{
+        display: flex;
+    }
+
+    .box3{
+        margin-top: 20px;
+        margin-left:60px;
+        /* height: 30vh; */
+        width: 45%;
+        border: 1px solid black;
+    }
+    .box4{
+        margin-top: 20px;
+        margin-left: 50px;
+        /* height: 30vh; */
+        width: 70%;
+        border: 1px solid black;
+    }
+    
+    .c{
+        display:flex;
+    }
+    .box5{
+        margin-top: 20px;
+        margin-left: 60px;
+        height: 30vh;
+        width: 45%;
+        border: 1px solid black;
+    }
+
+    .box6{
+        margin-top: 20px;
+        margin-left: 60px;
+        /* height: 30vh; */
+        width: 45%;
+        border: 1px solid black;
+    }
+
+   
+    .d{
+        display:flex;
+    }
+    .box7{
+        position: absolute;
+        top:143rem;
+        left: 3.5rem;
+        margin-top: 80px;
+        /* height: 30vh; */
+        width: 45%;
+        border: 1px solid black;
+    }
+    .box8{
+        position: absolute;
+        top:143rem;
+        left: 41rem;
+        /* height: 30vh; */
+        width: 45%;
+        border: 1px solid black;
+    }
+    .box1 h1{
+        font-size: 19px;
+        margin: 30px 20rem;
+    }
+    .box1 p{
+        padding: 10px;
+        margin: -10px 20px;
+        font-size: 16px;
+    }
+    .box2 h1{
+        font-size: 19px;
+        margin: 30px 5rem;
+    }
+    .box2 p{
+        padding: 10px;
+        margin: -10px 85px;
+        font-size: 16px;
+    }
+    .box3 h1{
+        font-size: 19px;
+        margin: 30px 20rem;
+    }
+    .box3 p{
+        padding: 10px;
+        margin: -10px 20px;
+        font-size: 16px;
+    }
+    .box4 h1{
+        font-size: 19px;
+        margin: 30px 5rem;
+    }
+    .box4 p{
+        padding: 10px;
+        margin: -10px 85px;
+        font-size: 16px;
+    }
+    .box5 h1{
+        font-size: 19px;
+        margin: 30px 20rem;
+    }
+   
+    .box5 p{
+        margin-bottom: 50px;
+        margin: -10px 85px;
+        font-size: 16px;
+    }
+    .box6 h1{
+        font-size: 20px;
+        margin: 30px 5rem;
+    }
+    .box6 p{
+        padding: 10px;
+        margin: -10px 80px;
+        font-size: 16px;
+    }
+    .box7 h1{
+        font-size: 20px;
+        margin: 30px 20rem;
+    }
+    .box7 p{
+        padding: 10px;
+        margin: -10px 30px;
+        font-size: 16px;
+    }
+    .box8 h1{
+        font-size: 20px;
+        margin: 30px 5rem;
+    }
+    .box8 p{
+        padding: 10px;
+        margin: -10px 85px;
+        font-size: 16px;
+    }
+    .two button{
+        padding: 18px 40px;
+        margin-top: 130rem;
+        font-size: 20px;
+        color: #13357b;
+        color: white;
+        
+    }
+</style>
+
+<body>
+
+    <div class="header">
+        <div></div>
+        <div class="one">
+
+            <li style="margin-right: 35px;">Register</li>
+            <li style="margin-right: 20px;">Login</li>
+            <li style="margin-right: 10px;">MyDashboard</li>
+        </div>
+    </div>
+
+    <div class="image">
+        <div>
+            <p>Travela</p>
+        </div>
+        <div class="two">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Packages</li>
+            <li>Blog</li>
+            <li>Pages</li>
+            <li>Contact</li>
+            <li>BookNow</li>
+        </div>
+    </div>
+    <div class="text">
+        <span> Explore Tour Start </span>
+        <h1>Find Your Perfect Tour At <br>
+            <p>Travel</p>
+        </h1>
+        <h2>Lorem ipsum, dolor sit amet<br> consectetur adipisicing elit. <br>Incidunt saepe error sunt illo <br>tenetur labore nisi
+            porro quia nam nostrum?</h2>
+        <button>Discover Now</button>
+        <div class="A">
+            <input type="text" class="inp2">
+            <div class="B">
+
+                <div class="C">
+                    <input type="" class="inp1">
+                    <button>search</button>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="main">
+        <div class="box">
+            <img src="https://themewagon.github.io/travela/img/about-img.jpg" alt="">
+        </div>
+        <div class="D">
+            <h5>ABOUT US ---</h5>
+            <h1>Welcome to<h1>
+                    <h2>Travela</h2>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, voluptatibus velit. Sit
+                        laudantium quisquam reiciendis? Odit iste neque atque ipsum iusto quis nam. Tempore molestiae,
+                        porro quibusdam saepe ipsa perferendis!</p>
+
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, sunt, suscipit corporis
+                        omnis voluptatum, a tempora eaque aspernatur est accusantium minima unde rerum corrupti
+                        consectetur! Ab dolor repudiandae omnis vel.</span>
+        </div>
+        <div class="tab">
+            <table>
+                <tr>
+                    <th>First Class flight</th>
+
+                </tr>
+                <tr>
+                    <th>5 Star Accomadation</th>
+
+                </tr>
+                <tr>
+                    <th>150 Premium Tours</th>
+
+                </tr>
+
+            </table>
+        </div>
+
+        <div class="tab1">
+            <table>
+                <tr>
+                    <th>Handpicked Hotels</th>
+                </tr>
+
+                <tr>
+                    <th>Latest Model Vehicles</th>
+                </tr>
+                <tr>
+                    <th>24/7 Services</th>
+                </tr>
+            </table>
+        </div>
+        <div class="Aa">
+            <button>Read More</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h4>Services</h4>
+        <h3>Our</h3>
+        <h5>Services</h5>
+    </div>
+
+    <div class="a">
+        <div class="box1">
+            <h1>WorldWide Tour</h1>
+            <p>Dolor sit amet consectetur adipisicing elit. Non alias eum,<br> suscipit expedita corrupti officiis debitis <br>possimus nam laudantium beatae quidem dolore consequuntur voluptate <br>rem reiciendis, omnis sequi harum earum.
+            </p>
+        </div>
+        <div class="box2">
+            <h1>WorldWide Tour</h1>
+            <p>Dolor sit amet consectetur adipisicing elit. Non alias eum,<br> suscipit expedita corrupti officiis debitis <br>possimus nam laudantium beatae quidem dolore consequuntur voluptate <br>rem reiciendis, omnis sequi harum earum.</p>
+        </div>
+    </div>
+    <div class="b">
+        <div class="box3">
+            <h1>Hotel Reservation</h1>
+            <p>Dolor sit amet consectetur adipisicing elit. Non alias eum,<br> suscipit expedita corrupti officiis debitis <br>possimus nam laudantium beatae quidem dolore consequuntur voluptate <br>rem reiciendis, omnis sequi harum earum.</p>
+        </div>
+        <div class="box4">
+            <h1>Hotel Reservation</h1>
+            <p>Dolor sit amet consectetur adipisicing elit. Non alias eum,<br> suscipit expedita corrupti officiis debitis <br>possimus nam laudantium beatae quidem dolore consequuntur voluptate <br>rem reiciendis, omnis sequi harum earum.</p>
+        </div>
+    </div>
+
+    <div class="c">
+        <div class="box5">
+            <h1>Travel Guides</h1>
+            <p>Dolor sit amet consectetur adipisicing elit. Non alias eum,<br> suscipit expedita corrupti officiis debitis <br>possimus nam laudantium beatae quidem dolore consequuntur voluptate <br>rem reiciendis, omnis sequi harum earum.</p>
+        </div>
+        <div class="box6">
+            <h1>Travel Guides</h1>
+            <p>Dolor sit amet consectetur adipisicing elit. Non alias eum,<br> suscipit expedita corrupti officiis debitis <br>possimus nam laudantium beatae quidem dolore consequuntur voluptate <br>rem reiciendis, omnis sequi harum earum.</p>
+        </div>
+
+        <div class="d">
+            <div class="box7">
+                <h1>Event Managment</h1>
+                <p>Dolor sit amet consectetur adipisicing elit. Non alias eum,<br> suscipit expedita corrupti officiis debitis <br>possimus nam laudantium beatae quidem dolore consequuntur voluptate <br>rem reiciendis, omnis sequi harum earum.</p>
+            </div>
+            <div class="box8">
+                <h1>Event Mangment</h1>
+                <p>Dolor sit amet consectetur adipisicing elit. Non alias eum,<br> suscipit expedita corrupti officiis debitis <br>possimus nam laudantium beatae quidem dolore consequuntur voluptate <br>rem reiciendis, omnis sequi harum earum.</p>
+            </div>
+            <div class="two">
+                <button>Service More</button>
+            </div>
+    </div>
+    
+    </div>
+
+
+
+
+
+</body>
+
+</html>

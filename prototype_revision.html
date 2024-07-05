@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let school={
+            school_name:"JDS",
+            school_address:"Near by gopalpura",
+            fees(subject){
+                if(subject===pcm){
+                    console.log("Total fees is 40000")
+                }
+                else if(subject===commerce){
+                    console.log("Total fees is 30000")
+                }
+                else if(subject===Arts){
+                    console.log("Total fees is 20000")
+                }
+                else{ 
+                     console.log("pass the subject")
+                }
+              
+            }
+        }
+
+        let mohit={
+            name:"Mohit",
+            roll:1,
+            subject:"pcm",
+        }
+
+        let rohit={
+            name:"rohit",
+            roll:1,
+            subject:"commerce"
+        }
+
+        let aman={
+            name:"aman",
+            roll:1,
+            subject:"Arts"
+        }
+     
+        mohit.__proto__=school;
+        rohit.__proto__=school;
+        aman.__proto__=school;
+    </script>
+    
+</body>
+</html>

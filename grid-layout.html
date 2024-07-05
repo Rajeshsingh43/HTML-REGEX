@@ -1,0 +1,258 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        display: grid;
+        background-color: black;
+        height: 100vh;
+        grid-template-rows: 1fr 5fr 1fr;
+      }
+
+      .box {
+        background-color: pink;
+        margin: 5px;
+      }
+
+      #box-2 {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+      }
+
+      .inner-box {
+        height: 100%;
+        /* width: 400px; */
+        background-color: black;
+        border: 2px solid yellow;
+      }
+
+      .item {
+        height: 100%;
+        /* width: 200px; */
+        background-color: yellow;
+        border: 2px solid red;
+      }
+
+      #inner-box-2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+      }
+
+      .item:nth-child(1){
+        background-color: red;
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+
+      .item:nth-child(8){
+        background-color: red;
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
+
+      @media (max-width: 806px) {
+
+        #box-2{
+            grid-template-columns: 1fr;
+        }
+        #inner-box-2 {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 400px) {
+        #inner-box-2 {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box" id="box-2">
+        <div class="inner-box"></div>
+        <div class="inner-box" id="inner-box-2">
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+        </div>
+      </div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+                .container{
+                    height: 100vh;
+                    display:grid;
+                    border: 2px solid black;
+                    padding: 4rem;
+                    gap: 1rem;
+                    grid-template-columns: repeat(3,1fr);
+                    grid-template-rows: repeat(6,2fr);
+                  
+                   }
+                   .item{
+                    background-color: blueviolet;
+                    border: 5px solid black;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    font-size: 20px;
+                   }
+                   .header{
+                    grid-column-start: 1;
+                    grid-column-end: 4;
+                   }
+                   .footer{
+                    grid-column-start: 1;
+                    grid-column-end: 4;
+                   }
+                  
+                   .sidebar{
+                    grid-row-start: 2;
+                    grid-row-end: 5;
+                   }
+                   .content1{
+                    grid-row-start: 2;
+                    grid-row-end: 4;
+                    grid-column-start:2 ;
+                    grid-column-end: 4;
+                    }
+                   
+                
+           
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item header">header</div>
+        <div class="item sidebar">sidebar</div>
+        <div class="item content1">content1</div>
+        <div class="item content2">content2</div>
+        <div class="item content3" >content3</div>
+        <div class="item footer">footer</div>
+        
+        
+    </div> -->
+
+
+
+     <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <style>
+        *{
+          margin: 0px;
+          padding: 0px;
+          box-sizing: border-box;
+        }
+        body{
+          height: 100vh;
+          width: 100vw;
+        }
+        .container{
+          padding: 4rem;
+          height: 100vh;
+          border: 1px solid black;
+          display: grid;
+          grid-template-columns: repeat(7,1fr);
+          grid-template-rows: repeat(3,1fr);
+        }
+        .boxes{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 30px;
+          margin: 3px;
+          /* height: 50%;
+          width: 50%; */
+          background-color: beige;
+        }
+       
+        .two{
+          background-color: aquamarine;
+          grid-column-start:2;
+          grid-column-end: 4;
+        }
+        #four{
+          margin-left: 15px;
+          background-color: blue;
+          width: 85%;
+          height: 300%;
+            
+        }
+        #fifth{
+          background-color: brown;
+          width: 90%;
+          height: 300%;
+            
+        }
+        #six{
+          background-color: aquamarine;
+          width: 20%;
+          height: 300%;
+            
+        }
+        #seven{
+          height: 200%;
+        }
+        .eight{
+          height: 200%;
+          background-color: peru;
+          grid-column-start: 2;
+          grid-column-end: 5;
+        }
+
+      </style>
+    </head>
+    <body>
+      <div class="container">
+      <div class="boxes one">1</div>
+      <div class="boxes two">2</div>
+      <div class="boxes">3</div>
+      <div class="boxes"id="four">4</div>
+      <div class="boxes"id ="fifth">5</div>
+      <div class="boxes"id="six">6</div>
+      <div class="boxes"id="seven">7</div>
+      <div class="boxes eight">8</div>
+      <div>
+      
+    </body>
+    </html>
+  
+</body>
+</html>

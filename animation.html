@@ -1,0 +1,181 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container1{
+        height: 10vh;
+        width: 25%;
+        border: 1px solid black;
+        animation-name:container;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes container {
+        form{
+             width: 25px;
+             height: 0px;
+             background-color: red;
+             border-radius: 300px;
+        }
+
+        to{
+            width: 50px;
+            height: 20vh;
+            background-color: yellow;
+            border-radius: 600px;
+        }
+    }
+    .container2{
+        position: relative;
+        right: 0px;
+        top:20px;
+        height: 10vh;
+        width: 10px;
+        border: 1px solid black;
+        animation-name:container2;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+
+    }
+    @keyframes container2 {
+        form{
+            width: 25px;
+             height: 0px;
+             background-color: red;
+             border-radius: 50px;
+
+        }
+        to{
+            width: 50%;
+            height: 10vh;
+            background-color: yellow;
+            border-radius: 10px;
+
+        }
+        
+    }
+
+</style>
+<body>
+    <div class="container1"></div>
+    <div class="container2"></div>
+
+    
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        height: 200px;
+        width: 200px;
+        background-color: yellow;
+        animation-name: container;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-timing-function: linear;
+        position: relative;
+    }
+    @keyframes container {
+        0%{
+            top: 0px;
+            left: 500px;
+
+        }
+        25%{
+           top: 500px;
+           left: 0px;
+           background-color: red;
+           border-radius: 5px;
+        }
+        50%{
+            top: 500px;
+            right: 500px;
+            background-color: pink;
+            border-radius: 100px;
+
+        }
+        100%{
+            top: 0px;
+            left: 500px;
+            background-color: white;
+            border-radius: 50px;
+
+        }
+        
+    }
+</style>
+<body>
+    <div class="container"></div>
+    
+</body>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        height: 200px;
+        width: 20%;
+        display: inline-block;
+        background-color: yellow;
+        cursor: pointer;
+        position: relative;
+        /* animation-name: box;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite; */
+        animation: box 2s ease-in infinite;
+    }
+    @keyframes box {
+        0%{
+            top: 0;
+            left: 0;
+        }
+        25%{
+            top: 0px;
+            left: 500px;
+        }
+        50%{
+            top:500px;
+            left:500px;
+        }
+        75%{
+            top:0px;
+            left: 500px;
+        }
+        100%{
+            top:500px;
+            left:0px;
+        }
+        
+    }
+</style>
+<body>
+ <div class="box"></div>
+ <!-- <div class="box"></div>
+ <div class="box"></div>
+ <div class="box"></div>
+ <div class="box"></div>
+ <div class="box"></div>
+ <div class="box"></div>
+ <div class="box"></div> -->
+    
+</body>
+</html>

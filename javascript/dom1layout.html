@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        background-color: beige;
+        padding: 20px;
+        height: 70vh;
+        width: 60vh;
+        margin: auto;
+        border: 1px solid black;
+        /* font-size: 40px; */
+    }
+    select{
+        margin-top: 20px;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+
+    p{
+        margin-top: 30px;
+        font-family: sans-serif;
+    }
+</style>
+<body>
+    <div class="container">
+        <span>select your Domain</span>
+        <select name="" id="select">
+        <option value="none">none</option>
+        <option value="AWS">AWS</option>
+        <option value="Mern">Mern</option>
+        <option value="data science">Data science</option>
+        </select>
+        <p id="p"></p>
+    </div>
+
+
+    <script>
+        document.getElementById("select").onclick=function(){
+            let a=document.getElementById("select").value;
+            console.log(a);
+
+            if(a=="AWS"){
+                document.getElementById("p").innerText="Amazon Web Services (AWS) is the world’s most comprehensive and broadly adopted cloud, offering over 200 fully featured services from data centers globally. Millions of customers—including the fastest-growing startups, largest enterprises, and leading government agencies—are using AWS to lower costs, become more agile, and innovate faster."
+            }
+            else if(a=="none"){
+                document.getElementById("p").innerText=""
+            }
+            else if(a=="Mern"){
+                document.getElementById("p").innerText="Web development refers to the creating, building, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management. One of the most famous stack that is used for Web Development is MERN stack. This stack provides an end-to-end framework for the developers to work in and each of these technologies play a big part in the development of web applications"
+            }
+            else if(a=="data science"){
+                document.getElementById("p").innerText="Data science is defined as an interdisciplinary field that involves extracting knowledge and insights from data using scientific methods, algorithms, and systems. Data Science combines elements of mathematics, statistics, computer science, and domain expertise to analyze large volumes of structured and unstructured data. The goal of data science is to uncover patterns, trends, and relationships within the data to make informed decisions, solve complex problems, and create predictive models"
+            }
+        }
+
+
+    </script>
+    
+</body>
+</html>

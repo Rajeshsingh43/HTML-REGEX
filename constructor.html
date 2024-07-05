@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// class student{
+//     constructor(name,roll,email,subject){
+//         this.stu_name=name
+//         this.stu_roll=roll
+//         this.stu_email=email
+//         this.stu_subject=subject
+
+//     }
+    
+
+//     showinformation(){
+//         console.log(this.stu_name,this.stu_roll,this.stu_email,this.stu_subject)
+
+//     }
+//     fees(subject){
+//         if(fees===pcm){
+//             console.log("fees is 30000")
+//         }
+//         else{
+//             console.log("fees not deposit")
+//         }
+//     }
+    
+// }
+
+// let mohit=new student("mohit","1001","mohit@gmail.com","pcm")
+// let rohit=new student("rohit","1002","rohit@gmail.com","pcm")
+// let aman=new student("aman","1003","aman@gmail.com","pcm")
+//   
+
+
+//inheritance
+
+//parent props
+//child can  be acess of parent clas props using inheritance 
+
+// class school{
+
+//     show(){
+//         console.log(" i am parent class")
+//     }
+// }
+
+// class student extends school{
+//     output(){
+//         console.log("i am student class")
+//     }
+// }
+
+// let o1=new student();
+// o1.output()
+// o1.show()
+
+
+class school {
+        
+        constructor(school_name,school_address){
+            this.school_name = school_name 
+            this.school_address = school_address
+        }
+
+        getschoolinfo(){
+            console.log(this.school_name,this.school_address)
+        }
+        
+      }
+
+      class student extends school{
+
+        constructor(school_name,school_address,name,roll_no,subject){
+            super(school_name,school_address)
+            this.name = name 
+            this.roll_no  = roll_no 
+            this.subject = subject
+        }
+
+        getstudentinfo(){
+            console.log(this.school_name,this.school_address,this.name,this.roll_no,this.subject)
+        }
+       
+      }
+
+      let o1 = new student("JDS","JAIPUR","mohit",1001,"PCM");
+      o1.getstudentinfo()
+
+      let o2 = new student("SUBHOD","JAIPUR","rohit",1002,"COmmerece");
+      o2.getstudentinfo()
+
+    //   let o1 = new school("JDS","Jaipur");
+    //   let o2 = new student("Mohit",151,"PCM");
+    //   o1.getschoolinfo()
+    //   o2.getstudentinfo()
+
+</script>
+    
+</body>
+</html>
